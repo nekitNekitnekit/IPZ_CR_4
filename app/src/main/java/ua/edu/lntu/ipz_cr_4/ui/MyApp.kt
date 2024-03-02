@@ -112,7 +112,7 @@ fun MyApp(
             }
             composable(route = MyScreen.ID.name) {
                 IdScreen(
-                    recommendation = uiState.currentId
+                    idcategory = uiState.currentCategory
                 )
             }
         }

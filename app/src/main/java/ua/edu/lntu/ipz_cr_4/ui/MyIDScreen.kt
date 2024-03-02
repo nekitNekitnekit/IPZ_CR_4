@@ -17,11 +17,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import ua.edu.lntu.ipz_cr_4.model.Id
+import ua.edu.lntu.ipz_cr_4.model.Category
 
 @Composable
 fun IdScreen(
-    recommendation: Id,
+    idcategory: Category,
     modifier: Modifier = Modifier
 ) {
     Card(
@@ -42,7 +42,7 @@ fun IdScreen(
             verticalArrangement = Arrangement.Top
         ) {
             Text(
-                text = stringResource(id = recommendation.titleResourceId),
+                text = stringResource(id = idcategory.titleResourceId),
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier
                     .padding(bottom = 12.dp)
