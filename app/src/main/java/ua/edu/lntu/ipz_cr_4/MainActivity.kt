@@ -112,6 +112,7 @@ fun IPZ_CR_4(
 @Composable
 fun MainPage(navController: NavHostController, number: MutableState<Int>) {
     Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
