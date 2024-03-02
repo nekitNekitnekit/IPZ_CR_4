@@ -2,14 +2,19 @@
     <string name="app_name">IPZ_CR_4</string>
     <string name="back_button">Назад</string>
 
-    <string name="category1">1</string>
-    <string name="category2">2</string>
-    <string name="category3">3</string>
-    <string name="category4">4</string>
-    <string name="category5">5</string>
-    <string name="category6">6</string>
-    <string name="category7">7</string>
-    <string name="category8">8</string>
-    <string name="category9">9</string>
-    <string name="category10">10</string>
+    <string name="category1_4">1-4</string>
+    <string name="category5_8">5-8</string>
+    <string name="category9_10">9-10</string>
+
+    <string name="int1">1</string>
+    <string name="int2">2</string>
+    <string name="int3">3</string>
+    <string name="int4">4</string>
+    <string name="int5">5</string>
+    <string name="int6">6</string>
+    <string name="int7">7</string>
+    <string name="int8">8</string>
+    <string name="int9">9</string>
+    <string name="int10">10</string>
+
 </resources>
