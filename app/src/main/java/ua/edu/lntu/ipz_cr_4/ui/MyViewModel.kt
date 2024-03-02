@@ -4,6 +4,12 @@ import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
+import ua.edu.lntu.ipz_cr_4.data.DataSource
+import ua.edu.lntu.ipz_cr_4.data.MyUiState
+import ua.edu.lntu.ipz_cr_4.model.Category
+import ua.edu.lntu.ipz_cr_4.model.Id
 
 class MyViewModel : ViewModel() {
 
@@ -17,12 +23,12 @@ class MyViewModel : ViewModel() {
                 headerTitleId = selectedCategory.titleResourceId
             )
         }
-        updateIDListData(selectedCategory.titleResourceId)
+        updateIdListData(selectedCategory.titleResourceId)
     }
 
-    fun setID(selectedID: ID) {
+    fun setId(selectedID: Id) {
         _uiState.update {
-            it.copy(currentID = selectedID)
+            it.copy(currentId = selectedId)
         }
     }
 
