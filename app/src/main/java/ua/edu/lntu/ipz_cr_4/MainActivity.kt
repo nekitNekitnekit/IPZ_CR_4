@@ -104,6 +104,19 @@ fun MainPage(navController: NavHostController, number: MutableState<Int>) {
     }
 }
 
+@Composable
+fun SecondPage(navController: NavHostController, number: MutableState<Int>) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("Сторінка ${number.value}")
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
