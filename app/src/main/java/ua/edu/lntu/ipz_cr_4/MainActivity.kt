@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun IPZ_CR_4(name: String, modifier: Modifier = Modifier) {
+fun IPZ_CR_4() {
     val navController = rememberNavController()
     val number = rememberSaveable { mutableStateOf(0) }
 
