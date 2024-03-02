@@ -58,7 +58,7 @@ fun IPZ_CR_4() {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "На головну") },
+                title = { Text(text = "Головна") },
                 navigationIcon = {
                     IconButton(onClick = {
                         navController.navigate("screen1")
@@ -96,7 +96,7 @@ fun MainPage(navController: NavHostController, number: MutableState<Int>) {
                 number.value = i
                 navController.navigate("screen2")
             }) {
-                Text("Назад до сторінки ${i}")
+                Text("Число ${i}")
             }
         }
 
@@ -113,7 +113,7 @@ fun SecondPage(navController: NavHostController, number: MutableState<Int>) {
     ) {
         Spacer(modifier = Modifier.height(16.dp))
 
-        Text("Сторінка ${number.value}")
+        Text("Число ${number.value}")
     }
 }
 
